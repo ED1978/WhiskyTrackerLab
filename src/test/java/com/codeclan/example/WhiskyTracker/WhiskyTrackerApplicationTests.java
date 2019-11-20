@@ -36,7 +36,7 @@ public class WhiskyTrackerApplicationTests {
 
 	@Test
 	public void findAllDistilleriesFromRegion() {
-		List<Distillery> found = distilleryRepository.findAllDistilleriesFromRegion("Highland");
-		assertEquals("Glendronach", found.get(0).getName());
+		List<Distillery> found = distilleryRepository.findAllDistilleriesFromRegion("Speyside");
+		assertEquals(2, found.size());
 	}
 }
