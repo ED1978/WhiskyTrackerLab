@@ -3,6 +3,7 @@ package com.codeclan.example.WhiskyTracker.repositories.DistilleryRepository;
 import com.codeclan.example.WhiskyTracker.models.Distillery;
 
 
+import com.codeclan.example.WhiskyTracker.models.Whisky;
 import org.hibernate.Criteria;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
@@ -35,10 +36,10 @@ public class DistilleryRepositoryImpl implements DistilleryRepositoryCustom {
         catch(HibernateException ex){
             ex.printStackTrace();
         }
-
-
         return result;
     }
+
+
 
 
 
