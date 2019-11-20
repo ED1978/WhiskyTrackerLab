@@ -30,7 +30,7 @@ public class DistilleryRepositoryImpl implements DistilleryRepositoryCustom {
         Session session = entityManager.unwrap(Session.class);
         try{
             Criteria cr = session.createCriteria(Distillery.class);
-            cr.add(Restrictions.eq("region", region));
+            cr.add(Restrictions.eq("region", region);
             result = cr.list();
         }
         catch(HibernateException ex){
